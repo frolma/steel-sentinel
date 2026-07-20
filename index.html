@@ -25,7 +25,8 @@ h1,h2,h3 { font-family:'Saira Semi Condensed',sans-serif; text-transform:upperca
 .trust span { color:var(--dim); font-size:13px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; }
 .trust span::before { content:"✔"; color:#4ac878; margin-right:7px; }
 .shots { display:flex; gap:16px; overflow-x:auto; padding:38px 22px; scroll-snap-type:x mandatory; }
-.shots img { width:min(64vw,250px); border-radius:16px; border:1px solid #2a2f22; scroll-snap-align:center; flex-shrink:0; }
+.shots::before, .shots::after { content:""; margin:auto; }
+.shots img, .shots video { width:min(64vw,250px); border-radius:16px; border:1px solid #2a2f22; scroll-snap-align:center; flex-shrink:0; }
 section.feats { padding:26px 0 10px; }
 .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin-top:22px; }
 .card { background:var(--panel); border:1px solid #232a1b; border-radius:14px; padding:22px; }
@@ -56,10 +57,15 @@ footer a { color:var(--lime); text-decoration:none; margin:0 10px; }
 </div>
 
 <div class="shots">
+  <video src="assets/preview.mp4" poster="assets/preview_poster.jpg" autoplay muted loop playsinline
+         aria-label="Gameplay trailer: explosions, airstrikes, night ops and the Infernal campaign"></video>
   <img src="assets/shot_classic.jpg" alt="Classic tank combat on a brick battlefield">
   <img src="assets/shot_boss.jpg" alt="Boss duel with a health bar at the top">
   <img src="assets/shot_support.jpg" alt="Airstrike explosion, deployed drone and auto-turret in battle">
+  <img src="assets/shot_night.jpg" alt="Night operation under fog of war in the Iron Labyrinth">
   <img src="assets/shot_inferno.jpg" alt="The Infernal campaign: lava and bone forests">
+  <img src="assets/shot_endless.jpg" alt="Endless Onslaught: waves on a darkened arena">
+  <img src="assets/shot_hub.jpg" alt="The campaign hub with four operations to choose from">
 </div>
 
 <section class="feats">
@@ -77,6 +83,10 @@ footer a { color:var(--lime); text-decoration:none; margin:0 10px; }
       <div class="card">
         <h3>Your Support Arsenal</h3>
         <p>Call in airstrikes, deploy an escort drone, plant an auto-turret and rebuild your base walls with one tap. One thumb drives, the other fires.</p>
+      </div>
+      <div class="card">
+        <h3>Every Battle Files a Report</h3>
+        <p>Each fight ends with a war dossier typed out like a telegram: your score in gold, a tank-by-tank kill tally with points, and the trophies you earned.</p>
       </div>
       <div class="card">
         <h3>Pick Your War</h3>
