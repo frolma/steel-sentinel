@@ -6,48 +6,81 @@
 <title>Support · Steel Sentinel: Tank Battle</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@600;700;900&family=Saira+Stencil+One&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="steel.css">
 <style>
-:root { --bg:#0b0d09; --lime:#d5e054; --text:#e9ece4; --dim:#9aa093; }
-* { margin:0; padding:0; box-sizing:border-box; }
-body { background:var(--bg); color:var(--text); font-family:'Inter',sans-serif; line-height:1.7; }
-.wrap { max-width:720px; margin:0 auto; padding:56px 22px 60px; }
-h1 { font-family:'Saira Semi Condensed'; text-transform:uppercase; font-size:34px; }
-h1 span { color:var(--lime); }
-h2 { font-family:'Saira Semi Condensed'; text-transform:uppercase; font-size:19px; color:var(--lime); margin:34px 0 8px; }
-p { color:var(--dim); margin:10px 0; }
-strong { color:var(--text); }
-a { color:var(--lime); text-decoration:none; }
-.back { display:inline-block; margin-bottom:26px; color:var(--dim); font-size:14px; }
-.mail { display:inline-block; margin-top:8px; background:var(--lime); color:#10120a; font-family:'Saira Semi Condensed'; font-weight:700; padding:12px 26px; border-radius:10px; letter-spacing:.04em; text-transform:uppercase; }
+.page { max-width:760px; margin:0 auto; padding:44px 22px 64px; }
+.back { display:inline-block; margin-bottom:26px; color:var(--faint); font-size:13.5px; letter-spacing:.04em; }
+.back:hover { color:var(--dim); }
+.masthead { text-align:center; padding:6px 0 10px; }
+.masthead h1 { font-size:clamp(24px,5.4vw,40px); line-height:1.15; }
+.section { margin-top:30px; }
+.section .plate { margin-bottom:6px; }
+.section p { color:var(--dim); margin:12px 0; }
+.section strong { color:var(--text); }
+.mail-row { text-align:center; margin-top:30px; }
+footer { border-top:1px solid #1b1f24; margin-top:46px; padding:26px 0 10px; text-align:center; color:var(--faint); font-size:12.5px; }
+footer a { margin:0 10px; }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="page">
   <a class="back" href="index.html">← Steel Sentinel</a>
-  <h1>Support &amp; <span>FAQ</span></h1>
 
-  <h2>I bought the Full Version on another device / after reinstalling</h2>
-  <p>Open the game → gear icon (Settings) → scroll to <strong>Support &amp; Contact</strong> → <strong>Restore Purchases</strong>. The unlock is tied to your Apple ID, not the device.</p>
+  <div class="masthead">
+    <h1 class="steel-text">Support &amp; FAQ</h1>
+  </div>
 
-  <h2>Where is my progress after switching devices?</h2>
-  <p>Progress syncs through your own private iCloud. Make sure both devices are signed into the same Apple ID with iCloud enabled, launch the game once on each, and the further run wins. Progress never moves backwards.</p>
+  <div class="section">
+    <div class="plate small"><span>Bought It On Another Device</span></div>
+    <p>Open the game → gear icon (Settings) → scroll to <strong>Support &amp; Contact</strong> → <strong>Restore Purchases</strong>. The unlock is tied to your Apple ID, not the device.</p>
+  </div>
 
-  <h2>How does the free part work?</h2>
-  <p>The first 8 missions of the main campaign and the first 3 missions of each Elite campaign are free, with every battle mechanic included. One purchase unlocks everything else, forever. No ads, no subscriptions.</p>
+  <div class="section">
+    <div class="plate small"><span>Where Is My Progress</span></div>
+    <p>Progress syncs through your own private iCloud. Make sure both devices are signed into the same Apple ID with iCloud enabled, launch the game once on each, and the further run wins. Progress never moves backwards.</p>
+  </div>
 
-  <h2>I want a refund</h2>
-  <p>Purchases are processed by Apple, so refunds go through them: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Apple usually answers within a day or two.</p>
+  <div class="section">
+    <div class="plate small"><span>Game Center And Leaderboards</span></div>
+    <p>Leaderboards and medals need Game Center switched on in your device settings and a connection to submit. Everything else, including the whole campaign, plays offline; scores earned offline are submitted the next time you are online.</p>
+  </div>
 
-  <h2>The music or sound is acting up</h2>
-  <p>Check the Music and Sound Effects switches in Settings, and the hardware mute switch on your device. If something still sounds wrong, write to us. A description plus your device model is enough.</p>
+  <div class="section">
+    <div class="plate small"><span>How The Free Part Works</span></div>
+    <p>The first 8 missions of the main campaign and the first 3 missions of each Elite campaign are free, with every battle mechanic included. One purchase unlocks everything else, forever. No ads, no subscriptions.</p>
+  </div>
 
-  <h2>I filed a Formal Complaint tip</h2>
-  <p>It has been filed, stamped, reviewed and respectfully ignored. The tanks are training harder as we speak. Thank you. Seriously.</p>
+  <div class="section">
+    <div class="plate small"><span>I Want A Refund</span></div>
+    <p>Purchases are processed by Apple, so refunds go through them: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Apple usually answers within a day or two.</p>
+  </div>
 
-  <h2>Anything else</h2>
-  <p>Ideas, bugs, kind words: a real person reads every message.</p>
-  <a class="mail" href="mailto:val.mail.dev@gmail.com">val.mail.dev@gmail.com</a>
+  <div class="section">
+    <div class="plate small"><span>Sound Is Acting Up</span></div>
+    <p>Check the Music and Sound Effects switches in Settings, and the hardware mute switch on your device. If something still sounds wrong, write to us. A description plus your device model is enough.</p>
+  </div>
+
+  <div class="section">
+    <div class="plate small"><span>A Formal Complaint Was Filed</span></div>
+    <p>It has been filed, stamped, reviewed and respectfully ignored. The tanks are training harder as we speak. Thank you. Seriously.</p>
+  </div>
+
+  <div class="section">
+    <div class="plate small"><span>Anything Else</span></div>
+    <p>Ideas, bugs, kind words: a real person reads every message.</p>
+  </div>
+
+  <div class="mail-row">
+    <a class="steel-button plain" href="mailto:val.mail.dev@gmail.com">val.mail.dev@gmail.com</a>
+  </div>
+
+  <footer>
+    <a href="index.html">Home</a> · <a href="privacy.html">Privacy</a> · <a href="press.html">Press Kit</a>
+    <p style="margin-top:10px">© 2026 Maxim Frolov. Steel Sentinel is an original game.</p>
+  </footer>
 </div>
 </body>
 </html>
